@@ -159,6 +159,7 @@ h2{font-size:clamp(28px,4.4vw,42px);margin-top:12px}
 
 footer{padding:38px 0 48px;text-align:center;color:var(--soft);font-size:14px}
 footer .heart{color:var(--rose)}
+footer .legal{margin-top:22px;padding-top:18px;border-top:1px solid rgba(0,0,0,.07);font-size:12px;line-height:1.75;color:var(--soft);opacity:.85;max-width:640px;margin-left:auto;margin-right:auto}
 
 /* ---------- mobile ---------- */
 @media(max-width:640px){
@@ -392,14 +393,22 @@ footer .heart{color:var(--rose)}
         <span class="cl">Email</span><span class="cv"><a href="mailto:hayley@cinderellascleaningservices.co.uk">hayley@cinderellascleaningservices.co.uk</a></span>
         <span class="cl">Instagram</span><span class="cv"><a href="https://www.instagram.com/cinderellascleaningservices24/" target="_blank" rel="noopener">@cinderellascleaningservices24</a></span>
       </div>
-      <div class="hours">MONDAY – SATURDAY · 9:00 – 15:00 · SUNDAY CLOSED</div>
+      <div class="hours">MONDAY – THURSDAY · 7:00 – 15:00 · FRIDAY, SATURDAY &amp; SUNDAY CLOSED</div>
     </div>
   </div>
 </section>
 
 <footer>
-  <div class="wrap">Cinderella's Cleaning Services · Heywood, Greater Manchester<br>Fully insured · Domestic &amp; commercial · Made with <span class="heart">♥</span> locally</div>
+  <div class="wrap">Cinderella's Cleaning Services · Heywood, Greater Manchester<br>Fully insured · Domestic &amp; commercial · Made with <span class="heart">♥</span> locally
+    <div class="legal">
+      Cinderella's Cleaning Services is a trading name of CINDERELLA CLEANING SERVICES LIMITED.<br>
+      Registered in England and Wales, company number 16438908.<br>
+      Registered office: 30 Hornchurch Court, Heywood, England, OL10 2WL.<br>
+      &copy; <span id="yr">2026</span> Cinderella Cleaning Services Limited. All rights reserved.
+    </div>
+  </div>
 </footer>
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
 
 <script>
 (function(){

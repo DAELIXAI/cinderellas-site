@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cinderella's Cleaning Services · Premium Domestic &amp; Commercial Cleaning · Hopwood, Heywood &amp; Middleton</title>
+<meta name="description" content="Premium, fully insured domestic and commercial cleaning across Hopwood, Heywood, Middleton and Greater Manchester. Homes cared for to a standard, salons and business spaces too. Run by Hayley.">
+<link rel="icon" href="assets/favicon.png?v=3">
+<meta property="og:title" content="Cinderella's Cleaning Services">
+<meta property="og:description" content="Premium domestic &amp; commercial cleaning · Hopwood, Heywood &amp; Middleton · Fully insured.">
+<meta property="og:image" content="assets/work1.jpg?v=3">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#463c3c; --soft:#8a7a7d; --rose:#d59db4; --rose-deep:#b76e8d; --blush:#f9eef2;
+  --cream:#faf6f0; --line:#eeddE4; --white:#fffdfb; --gold:#c8a96e;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Jost',sans-serif;font-weight:300;color:var(--ink);background:var(--cream);line-height:1.75;font-size:16.5px;letter-spacing:.01em}
+h1,h2,h3{font-family:'Bodoni Moda',serif;line-height:1.16;font-weight:400;letter-spacing:.02em}
+a{color:var(--rose-deep);text-decoration:none}
+img{max-width:100%;display:block}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+
+header{background:rgba(255,255,255,.96);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10;backdrop-filter:blur(8px)}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:15px 0;gap:14px}
+.brand{display:flex;align-items:center;gap:12px;font-family:'Bodoni Moda',serif;font-weight:400;font-size:20px;letter-spacing:.08em;text-transform:uppercase}
+.brand img{height:56px;width:auto;background:none}
+.logo-wrap{display:inline-block}
+.name-wrap{position:relative;display:inline-block}
+.name-wrap .sp{position:absolute;font-size:12px;color:var(--gold);opacity:0;pointer-events:none;animation:twinkle 3s infinite;text-shadow:0 0 7px rgba(240,210,140,.95)}
+.name-wrap .sp:nth-child(2){top:-10px;right:-14px;animation-delay:0s}
+.name-wrap .sp:nth-child(3){top:-8px;left:52px;font-size:9px;animation-delay:1s}
+.name-wrap .sp:nth-child(4){bottom:-6px;right:30px;font-size:8px;animation-delay:1.9s;color:var(--rose-deep)}
+.name-wrap .sp:nth-child(5){top:-12px;left:130px;font-size:10px;animation-delay:2.5s}
+@keyframes twinkle{0%,100%{opacity:0;transform:scale(.4) rotate(0deg)}12%{opacity:1;transform:scale(1.15) rotate(20deg)}28%{opacity:0;transform:scale(.5) rotate(45deg)}}
+@media(prefers-reduced-motion:reduce){.name-wrap .sp{animation:none;opacity:0}}
+.sections{display:flex;gap:20px;flex-wrap:wrap;justify-content:center}
+.sections a{font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--rose-deep);font-weight:500;transition:color .2s}
+.sections a:hover{color:var(--ink)}
+@media(max-width:900px){.sections{display:none}}
+.nav .call{background:var(--rose-deep);color:#fff;font-weight:500;padding:11px 24px;border-radius:999px;font-size:12.5px;white-space:nowrap;letter-spacing:.14em}
+.nav .call:hover{background:var(--rose-deep)}
+
+.hero{position:relative;min-height:78vh;display:flex;align-items:center;color:#fff;background:#222 url('assets/work1.jpg?v=3') center 35%/cover no-repeat}
+.hero::before{content:'';position:absolute;inset:0;background:linear-gradient(105deg,rgba(58,38,48,.74) 0%,rgba(58,38,48,.42) 55%,rgba(58,38,48,.16) 100%)}
+.hero .wrap{position:relative;padding-top:70px;padding-bottom:70px}
+.hero .kick{font-size:11.5px;font-weight:400;letter-spacing:.34em;text-transform:uppercase;color:#f0d4e0}
+.hero h1{font-size:clamp(38px,6.2vw,64px);margin-top:14px;max-width:620px}
+.hero p.lead{max-width:520px;margin-top:20px;font-size:18px;color:#f2e9ee;font-weight:400}
+.hero .cta-row{margin-top:34px;display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-block;padding:15px 36px;border-radius:999px;font-weight:500;font-size:13.5px;letter-spacing:.18em;text-transform:uppercase}
+.btn.primary{background:#fff;color:var(--ink)}
+.btn.primary:hover{background:var(--blush)}
+.btn.ghost{border:1.5px solid rgba(255,255,255,.7);color:#fff}
+.hero .badges{display:flex;gap:22px;flex-wrap:wrap;margin-top:42px;font-size:11.5px;font-weight:400;letter-spacing:.22em;color:#eddde5}
+
+section{padding:72px 0}
+.kicker{font-size:11.5px;font-weight:500;letter-spacing:.34em;color:var(--rose-deep);text-transform:uppercase}
+h2{font-size:clamp(28px,4.4vw,42px);margin-top:12px}
+.center{text-align:center}
+.sub{color:var(--soft);max-width:640px;margin-top:14px}
+.center .sub{margin-left:auto;margin-right:auto}
+
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px;margin-top:40px}
+.card{background:var(--white);border:1px solid var(--line);border-radius:16px;padding:30px 24px}
+.card h3{font-size:22px}
+.card p{color:var(--soft);font-size:15px;margin-top:10px}
+.card .tag{font-size:10.5px;font-weight:500;letter-spacing:.26em;color:var(--rose-deep);text-transform:uppercase}
+
+.gallery{background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px;margin-top:40px}
+.grid .ph{aspect-ratio:4/5;border-radius:12px;overflow:hidden;background:var(--blush);position:relative}
+.grid .ph img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.grid .ph:hover img{transform:scale(1.04)}
+.grid .ph.dual .v{position:absolute;inset:0;opacity:0;transition:opacity .6s ease}
+.grid .ph.dual .v.on{opacity:1}
+.grid .ph.dual{cursor:pointer}
+.grid .ph.dual:hover .v.a.on~.dots i:nth-child(2){background:#fff}
+.grid .ph.dual .dots{position:absolute;bottom:10px;left:50%;transform:translateX(-50%);display:flex;gap:6px;z-index:2}
+.grid .ph.dual .dots i{width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,.45);transition:background .3s}
+.grid .ph.dual .dots i.on{background:#fff}
+
+.dust-wrap{position:relative;display:inline-block}
+.dust-wrap .du{position:absolute;color:var(--gold);opacity:0;pointer-events:none;text-shadow:0 0 8px rgba(240,210,140,.9);animation:dust 4.2s ease-in-out infinite}
+.dust-wrap .d1{top:-18px;left:-26px;font-size:13px;animation-delay:0s}
+.dust-wrap .d2{top:-26px;left:22%;font-size:8px;animation-delay:.7s;color:var(--rose-deep)}
+.dust-wrap .d3{top:-14px;left:48%;font-size:10px;animation-delay:1.3s}
+.dust-wrap .d4{top:-24px;right:20%;font-size:7px;animation-delay:1.9s}
+.dust-wrap .d5{top:-16px;right:-24px;font-size:12px;animation-delay:2.4s;color:var(--rose-deep)}
+.dust-wrap .d6{bottom:-14px;left:12%;font-size:7px;animation-delay:2.9s}
+.dust-wrap .d7{bottom:-18px;left:58%;font-size:9px;animation-delay:3.4s}
+.dust-wrap .d8{bottom:-12px;right:-16px;font-size:8px;animation-delay:3.8s;color:var(--rose-deep)}
+@keyframes dust{0%,100%{opacity:0;transform:translateY(4px) scale(.4) rotate(0deg)}12%{opacity:1;transform:translateY(-2px) scale(1.1) rotate(25deg)}30%{opacity:0;transform:translateY(-9px) scale(.45) rotate(60deg)}}
+@media(prefers-reduced-motion:reduce){.dust-wrap .du{animation:none;opacity:0}}
+.cmp{position:relative;max-width:560px;margin:40px auto 0;border-radius:14px;overflow:hidden;aspect-ratio:4/5;cursor:ew-resize;user-select:none;touch-action:none}
+.cmp img{width:100%;height:100%;object-fit:cover;display:block;pointer-events:none}
+.cmp-before{position:absolute;inset:0;width:50%;overflow:hidden}
+.cmp-before img{width:auto;height:100%;max-width:none}
+.cmp-handle{position:absolute;top:0;bottom:0;left:50%;width:2px;background:#fff;box-shadow:0 0 8px rgba(0,0,0,.35)}
+.cmp-handle span{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:40px;height:40px;border-radius:50%;background:#fff;box-shadow:0 2px 10px rgba(0,0,0,.3)}
+.cmp-handle span::before{content:'◂ ▸';position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:12px;color:var(--rose-deep);letter-spacing:1px}
+.cmp .lab{position:absolute;top:12px;background:rgba(70,50,60,.72);color:#fff;font-size:10.5px;font-weight:400;letter-spacing:.24em;padding:7px 16px;border-radius:999px;text-transform:uppercase}
+
+.owner{background:var(--blush)}
+.owner-grid{display:grid;grid-template-columns:340px 1fr;gap:44px;align-items:center;margin-top:40px}
+.owner-grid .portrait{border-radius:16px;overflow:hidden}
+.owner-grid .portrait img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.owner-copy h3{font-size:26px}
+.owner-copy p{margin-top:14px;color:var(--ink)}
+.owner-copy .sig{margin-top:18px;font-family:'Bodoni Moda',serif;font-style:italic;font-size:22px;color:var(--rose-deep)}
+@media(max-width:760px){.owner-grid{grid-template-columns:1fr}}
+
+.creed{padding:84px 0;background:#5c4450;color:#fff;text-align:center}
+.creed p.line{font-family:'Bodoni Moda',serif;font-size:clamp(24px,3.6vw,34px);font-style:italic;max-width:720px;margin:0 auto;line-height:1.45}
+.creed .small{margin-top:18px;font-size:11.5px;letter-spacing:.3em;color:#d8bcc9;text-transform:uppercase;font-weight:400}
+
+.commercial-grid{display:grid;grid-template-columns:1fr 380px;gap:44px;align-items:center;margin-top:40px}
+.commercial-grid .photo{border-radius:16px;overflow:hidden}
+.commercial-grid .photo img{width:100%;aspect-ratio:4/5;object-fit:cover}
+@media(max-width:760px){.commercial-grid{grid-template-columns:1fr}}
+
+.prices{background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.price-grid{display:grid;grid-template-columns:300px 1fr;gap:44px;align-items:end;margin-top:40px}
+.price-fig{position:relative;display:flex;justify-content:center}
+.price-fig img{width:100%;max-width:280px;animation:heroFloat 6s ease-in-out infinite;filter:drop-shadow(0 18px 24px rgba(70,50,60,.18))}
+@keyframes heroFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+.price-fig .hsp{position:absolute;color:var(--gold);opacity:0;pointer-events:none;animation:twinkle 3.4s infinite;text-shadow:0 0 10px rgba(240,210,140,.9)}
+.price-fig .hsp:nth-child(2){top:4%;right:12%;font-size:22px;animation-delay:.3s}
+.price-fig .hsp:nth-child(3){top:26%;left:6%;font-size:14px;animation-delay:1.5s}
+.price-fig .hsp:nth-child(4){top:52%;right:4%;font-size:16px;animation-delay:2.4s}
+.price-list{display:flex;flex-direction:column;gap:14px;padding-bottom:16px}
+.price-row{display:flex;justify-content:space-between;align-items:baseline;gap:18px;border-bottom:1px solid var(--line);padding:16px 0}
+.price-row .nm{font-family:'Bodoni Moda',serif;font-size:20px}
+.price-row .nm small{display:block;font-family:'Jost',sans-serif;font-size:13.5px;color:var(--soft);margin-top:4px;font-weight:300}
+.price-row .pr{font-family:'Bodoni Moda',serif;font-size:20px;color:var(--rose-deep);white-space:nowrap}
+.price-note{margin-top:18px;font-size:13px;color:var(--soft);letter-spacing:.06em}
+.inc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:36px}
+.inc{background:var(--blush);border:1px solid var(--line);border-radius:16px;padding:26px 24px}
+.inc h3{font-size:19px;letter-spacing:.04em}
+.inc ul{list-style:none;margin-top:14px}
+.inc li{font-size:14px;color:var(--ink);padding:5px 0 5px 18px;position:relative;font-weight:300}
+.inc li::before{content:'✦';position:absolute;left:0;top:6px;font-size:8px;color:var(--rose-deep)}
+@media(max-width:760px){.price-grid{grid-template-columns:1fr}.price-fig img{max-width:220px}}
+@media(prefers-reduced-motion:reduce){.price-fig img{animation:none}.price-fig .hsp{animation:none;opacity:0}}
+.area-list{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px;justify-content:center}
+.pill{background:var(--white);border:1px solid var(--line);border-radius:999px;padding:10px 26px;font-size:13px;font-weight:400;letter-spacing:.14em;color:var(--rose-deep);text-transform:uppercase}
+
+.contact{background:var(--blush)}
+.contact-card{background:var(--white);border:1px solid var(--line);border-radius:20px;max-width:560px;margin:40px auto 0;padding:38px;text-align:center}
+.contact-card .big{font-family:'Bodoni Moda',serif;font-size:26px}
+.contact-card .rows{display:grid;grid-template-columns:auto auto;justify-content:center;column-gap:18px;row-gap:14px;margin-top:22px;align-items:baseline}
+.contact-card .cl{text-align:right;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--soft)}
+.contact-card .cv{text-align:left;font-size:17px}
+.contact-card .cv a{font-weight:500}
+.hours{margin-top:22px;font-size:12.5px;color:var(--soft);letter-spacing:.18em}
+
+footer{padding:38px 0 48px;text-align:center;color:var(--soft);font-size:14px}
+footer .heart{color:var(--rose)}
+
+/* ---------- mobile ---------- */
+@media(max-width:640px){
+  section{padding:52px 0}
+  .nav{padding:10px 0}
+  .brand{font-size:13.5px;letter-spacing:.06em;gap:8px}
+  .brand img{height:40px}
+  .name-wrap .sp:nth-child(3){left:30px}
+  .name-wrap .sp:nth-child(5){left:76px}
+  .nav .call{padding:9px 14px;font-size:11px;letter-spacing:.08em}
+  .hero{min-height:62vh}
+  .hero .wrap{padding-top:52px;padding-bottom:52px}
+  .hero h1{font-size:clamp(32px,9vw,42px)}
+  .hero p.lead{font-size:16px}
+  .btn{padding:13px 26px;font-size:12.5px;width:100%;text-align:center}
+  .hero .cta-row{flex-direction:column;max-width:320px}
+  .hero .badges{gap:10px 18px;font-size:10.5px}
+  h2{font-size:clamp(25px,7vw,32px)}
+  .cards{grid-template-columns:1fr;gap:12px}
+  .card{padding:24px 20px}
+  .grid{grid-template-columns:1fr 1fr;gap:10px}
+  .price-row{flex-direction:column;gap:4px;align-items:flex-start;padding:14px 0}
+  .price-row .pr{font-size:18px}
+  .inc-grid{grid-template-columns:1fr 1fr;gap:10px}
+  .inc{padding:20px 16px}
+  .inc li{font-size:13px}
+  .contact-card{padding:26px 20px}
+  .contact-card .rows{grid-template-columns:auto;justify-items:start;row-gap:4px}
+  .contact-card .cl{text-align:left;margin-top:12px}
+  .cmp{max-width:100%}
+  .owner-grid{gap:28px}
+  .commercial-grid{gap:24px}
+  .dust-wrap .d1{left:-12px}.dust-wrap .d5{right:-10px}.dust-wrap .d8{right:-6px}
+}
+@media(max-width:400px){
+  .grid{grid-template-columns:1fr}
+  .inc-grid{grid-template-columns:1fr}
+  .brand{font-size:12px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <div class="brand"><span class="logo-wrap"><img src="assets/hayley.png?v=3" alt="Hayley, owner of Cinderella's Cleaning Services, illustrated" onerror="this.style.display='none'"></span><span class="name-wrap">Cinderella's Cleaning Services<span class="sp">✦</span><span class="sp">✦</span><span class="sp">✦</span><span class="sp">✦</span></span></div>
+    <nav class="sections">
+      <a href="#services">Services</a>
+      <a href="#work">Our Work</a>
+      <a href="#prices">Prices</a>
+      <a href="#about">About</a>
+      <a href="#commercial">Business</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="call" href="tel:+447713275104">CALL · 07713 275104</a>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <div class="kick">Hopwood · Heywood · Middleton · Greater Manchester</div>
+    <h1>Your home, cared for to a standard.</h1>
+    <p class="lead">Premium domestic and commercial cleaning, fully insured, run personally by Hayley. Beautiful homes deserve the same care that made them beautiful.</p>
+    <div class="cta-row">
+      <a class="btn primary" href="#contact">Request a quote</a>
+      <a class="btn ghost" href="#work">See the standard</a>
+    </div>
+    <div class="badges"><span>FULLY INSURED</span><span>DOMESTIC &amp; COMMERCIAL</span><span>4,400+ FOLLOW OUR WORK</span></div>
+  </div>
+</div>
+
+<section id="services">
+  <div class="wrap center">
+    <div class="kicker">What we do</div>
+    <h2>Cleans that fit around your life</h2>
+    <p class="sub">From a weekly slot to a full end-of-tenancy reset, and business spaces cared for out of hours.</p>
+    <div class="cards" style="text-align:left">
+      <div class="card"><div class="tag">Regular</div><h3>Weekly &amp; bi-weekly</h3><p>Your slot, the same trusted face, a home that never gets on top of you.</p></div>
+      <div class="card"><div class="tag">Reset</div><h3>Deep &amp; one-off cleans</h3><p>Spring cleans, post-renovation, or a full top-to-bottom refresh.</p></div>
+      <div class="card"><div class="tag">Moving</div><h3>End of tenancy</h3><p>Handed back spotless. Landlord-ready, photographed if you need it.</p></div>
+      <div class="card"><div class="tag">Business</div><h3>Salons &amp; commercial</h3><p>Client-facing spaces kept immaculate, because your space is your reputation.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="gallery" id="work">
+  <div class="wrap center">
+    <div class="kicker">The standard</div>
+    <h2>Homes we're trusted with</h2>
+    <p class="sub">Every photo is a real home we look after, kept to the standard it was built for.</p>
+    <div class="grid">
+      <div class="ph dual"><img class="v a on" src="assets/work1.jpg?v=3" alt="Immaculate open-plan kitchen with island"><img class="v b" src="assets/work1b.jpg?v=3" alt="The same kitchen from the bi-fold doors"><span class="dots"><i class="on"></i><i></i></span></div>
+      <div class="ph dual"><img class="v a on" src="assets/work2.jpg?v=3" alt="Matte black designer kitchen, freshly cleaned"><img class="v b" src="assets/work2b.jpg?v=3" alt="The same matte black kitchen, second view"><span class="dots"><i class="on"></i><i></i></span></div>
+      <div class="ph dual"><img class="v a on" src="assets/work3.jpg?v=3" alt="Elegant dining room with herringbone floor"><img class="v b" src="assets/work4.jpg?v=3" alt="The same home's panelled staircase"><span class="dots"><i class="on"></i><i></i></span></div>
+      <div class="ph dual"><img class="v a on" src="assets/work7.jpg?v=3" alt="Luxury Wilmslow apartment lounge with chandelier"><img class="v b" src="assets/work8.jpg?v=3" alt="The same apartment's kitchen island"><span class="dots"><i class="on"></i><i></i></span></div>
+      <div class="ph dual"><img class="v a on" src="assets/work11.jpg?v=3" alt="Plush grey lounge, freshly cleaned"><img class="v b" src="assets/work11b.jpg?v=3" alt="The same home's black-framed shower room"><span class="dots"><i class="on"></i><i></i></span></div>
+      <div class="ph dual"><img class="v a on" src="assets/work12.jpg?v=3" alt="Cream gloss kitchen, spotless"><img class="v b" src="assets/work12b.jpg?v=3" alt="The same home's kitchen diner"><span class="dots"><i class="on"></i><i></i></span></div>
+      <div class="ph"><img src="assets/work5.jpg?v=3" alt="Cinema room with fresh-vacuumed carpet"></div>
+      <div class="ph"><img src="assets/work6.jpg?v=3" alt="Sparkling bathroom suite"></div>
+      <div class="ph"><img src="assets/work10.jpg?v=3" alt="End of tenancy apartment kitchen, handed back spotless"></div>
+    </div>
+    <p class="sub center" style="margin:16px auto 0;font-size:12.5px;letter-spacing:.14em;text-transform:uppercase">Cards with dots hold two views · hover or tap</p>
+  </div>
+</section>
+
+<section id="detail">
+  <div class="wrap center">
+    <div class="kicker">The difference</div>
+    <h2 class="dust-wrap">Dull to sparkle. The detail matters<span class="du d1">✦</span><span class="du d2">✦</span><span class="du d3">✦</span><span class="du d4">✦</span><span class="du d5">✦</span><span class="du d6">✦</span><span class="du d7">✦</span><span class="du d8">✦</span></h2>
+    <div class="cmp" id="cmp">
+      <img class="cmp-after" src="assets/after.jpg?v=3" alt="Gleaming chrome tap after cleaning">
+      <div class="cmp-before"><img src="assets/before.jpg?v=3" alt="Limescale-marked chrome tap before cleaning"></div>
+      <div class="cmp-handle"><span></span></div>
+      <span class="lab" style="left:12px">Before</span>
+      <span class="lab" style="left:auto;right:12px">After</span>
+    </div>
+    <p class="sub center" style="margin:14px auto 0;font-size:13px;letter-spacing:.14em;text-transform:uppercase">Drag the handle</p>
+  </div>
+</section>
+
+<section class="owner" id="about">
+  <div class="wrap">
+    <div class="center"><div class="kicker">The face behind the business</div><h2>A message from the owner</h2></div>
+    <div class="owner-grid">
+      <div class="portrait"><img src="assets/owner.jpg?v=3" alt="Hayley, owner of Cinderella's Cleaning Services"></div>
+      <div class="owner-copy">
+        <h3>I'm Hayley, and cleaning, honestly, is my therapy.</h3>
+        <p>I took the thing I love and made it a business, because there's nothing better than the thought of my clients walking into a clean, sparkling home after a busy day. Life gets so busy: work, parenting, socialising, trying to stay healthy. Believe me, I know. I'm a mum of four, so a full house and a full week are things I understand from the inside.</p>
+        <p>I believe a home is a vibrational place. It holds the energy of the people who live in it, and the state of your space reflects and shapes your inner life. That's why this work matters to me: a clean home isn't just tidy, it's lighter to live in.</p>
+        <p>My standards are high and I take real pride in my work. So when we walk into your home, we walk into your life, and we treat both with respect.</p>
+        <p class="sig">Hayley, owner</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="creed">
+  <div class="wrap">
+    <p class="line">"We know life gets busy and hectic. At Cinderella's there's no judgement, ever. We're here to help."</p>
+    <div class="small">We clean with compassion, not judgment</div>
+  </div>
+</div>
+
+<section id="commercial">
+  <div class="wrap">
+    <div class="center"><div class="kicker">For business</div><h2>Salons &amp; commercial spaces</h2></div>
+    <div class="commercial-grid">
+      <div>
+        <p class="sub" style="max-width:none">Your space is the first thing a client judges. Before the treatment, before the welcome, before a word is spoken. We keep client-facing businesses immaculate, working around your opening hours so your space is perfect when the first appointment walks in.</p>
+        <p class="sub" style="max-width:none;margin-top:14px">Trusted by <a href="https://www.instagram.com/bycourt_mcr/" target="_blank" rel="noopener"><b>By Court MCR</b></a>, Manchester.</p>
+      </div>
+      <div class="photo"><img src="assets/salon.jpg?v=3" alt="Freshly cleaned beauty salon interior, By Court MCR, Manchester"></div>
+    </div>
+  </div>
+</section>
+
+<section id="community" class="gallery">
+  <div class="wrap center">
+    <div class="kicker">Giving back</div>
+    <h2>Proud kit sponsors of B Pro Coaching</h2>
+    <p class="sub">Cinderella's proudly sponsors <a href="https://www.facebook.com/p/B-Pro-Football-Coaching-100042934287254/" target="_blank" rel="noopener"><b>B Pro Coaching</b></a>, grassroots junior football in North Manchester, raising the standards since 2022. Our name rides on the team's kit, because a local business should put back into the community it cleans for.</p>
+    <div class="grid" style="grid-template-columns:1fr;max-width:560px;margin-left:auto;margin-right:auto">
+      <div class="ph" style="aspect-ratio:4/3.7"><img src="assets/sponsor.jpg?v=3" alt="B Pro Coaching junior team wearing kit sponsored by Cinderella's Cleaning Services"></div>
+    </div>
+    <p class="sub" style="margin-top:18px;font-size:13.5px">Grassroots football in Greater Manchester: <a href="https://www.juniorgrassrootshub.com/greater-manchester-football" target="_blank" rel="noopener">Junior Grassroots Hub</a></p>
+  </div>
+</section>
+
+<section class="prices" id="prices">
+  <div class="wrap">
+    <div class="center"><div class="kicker">Guide prices</div><h2>Honest prices, quoted in writing</h2>
+    <p class="sub">Every home is different, so every job is confirmed with a written quote before we start. These are our guide rates.</p></div>
+    <div class="price-grid">
+      <div class="price-fig">
+        <img src="assets/hayley.png?v=3" alt="Hayley, owner of Cinderella's Cleaning Services, illustrated">
+        <span class="hsp">✦</span><span class="hsp">✦</span><span class="hsp">✦</span>
+      </div>
+      <div class="price-list">
+        <div class="price-row"><div class="nm">Regular cleaning<small>Weekly or bi-weekly · same trusted cleaner · minimum 2 hours</small></div><div class="pr">from £20 / hour</div></div>
+        <div class="price-row"><div class="nm">Monthly refresh<small>A thorough top-to-bottom clean, once a month</small></div><div class="pr">from £22 / hour</div></div>
+        <div class="price-row"><div class="nm">One-off &amp; deep cleans<small>Spring cleans, post-renovation, resets · priced by the property</small></div><div class="pr">from £120</div></div>
+        <div class="price-row"><div class="nm">End of tenancy<small>Landlord-ready, photographed on request · priced by the property</small></div><div class="pr">from £180</div></div>
+        <div class="price-row"><div class="nm">Salons &amp; commercial<small>Client-facing spaces, cleaned around your hours</small></div><div class="pr">quoted in writing</div></div>
+        <div class="price-note">Fully insured. No hidden extras. If we quote it, that is what you pay.</div>
+      </div>
+    </div>
+    <div class="center" style="margin-top:64px"><div class="kicker">Every clean covers</div><h2 style="font-size:clamp(24px,3.4vw,32px)">What's included</h2></div>
+    <div class="inc-grid">
+      <div class="inc">
+        <h3>Bathroom</h3>
+        <ul><li>Sink and bath cleaned</li><li>Toilet, inside and out</li><li>Shower, glass, taps and tray</li><li>Chrome taps and plugs shined</li><li>Mirrors and radiators</li><li>Window sills and touch points</li><li>Holders, bins and shelves wiped</li><li>Floors hoovered and mopped</li></ul>
+      </div>
+      <div class="inc">
+        <h3>Kitchen</h3>
+        <ul><li>All surfaces cleaned</li><li>Cupboard doors wiped</li><li>Sink cleaned and shined</li><li>Hob and splashback</li><li>Appliances wiped: kettle, toaster, microwave, fridge, washer, dryer, dishwasher</li><li>Touch points cleaned</li><li>Floors hoovered and mopped</li></ul>
+      </div>
+      <div class="inc">
+        <h3>Living room</h3>
+        <ul><li>Furniture and surfaces dusted</li><li>Sofas and cushions neatened</li><li>Remotes, coasters and mats wiped</li><li>Window sills wiped down</li><li>Touch points cleaned</li><li>Floors hoovered and mopped</li></ul>
+      </div>
+      <div class="inc">
+        <h3>Bedroom</h3>
+        <ul><li>Furniture and surfaces dusted</li><li>Beds neatened up</li><li>Mirrors cleaned</li><li>Window sills wiped</li><li>Touch points cleaned</li><li>Floors hoovered and mopped</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="area">
+  <div class="wrap center">
+    <div class="kicker">Where we work</div>
+    <h2>Covering your neighbourhood</h2>
+    <div class="area-list">
+      <div class="pill">Hopwood</div>
+      <div class="pill">Heywood</div>
+      <div class="pill">Middleton</div>
+      <div class="pill">Wilmslow</div>
+      <div class="pill">Greater Manchester</div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap center">
+    <div class="kicker">Get in touch</div>
+    <h2>A quote, without the pressure</h2>
+    <div class="contact-card">
+      <div class="big">Tell us about your home or business</div>
+      <div class="rows">
+        <span class="cl">Call</span><span class="cv"><a href="tel:+447713275104">07713 275104</a></span>
+        <span class="cl">Email</span><span class="cv"><a href="mailto:hayley@cinderellascleaningservices.co.uk">hayley@cinderellascleaningservices.co.uk</a></span>
+        <span class="cl">Instagram</span><span class="cv"><a href="https://www.instagram.com/cinderellascleaningservices24/" target="_blank" rel="noopener">@cinderellascleaningservices24</a></span>
+      </div>
+      <div class="hours">MONDAY – SATURDAY · 9:00 – 15:00 · SUNDAY CLOSED</div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">Cinderella's Cleaning Services · Heywood, Greater Manchester<br>Fully insured · Domestic &amp; commercial · Made with <span class="heart">♥</span> locally</div>
+</footer>
+
+<script>
+(function(){
+  var c=document.getElementById('cmp'); if(!c) return;
+  var bf=c.querySelector('.cmp-before'), hd=c.querySelector('.cmp-handle'), bi=bf.querySelector('img');
+  function fit(){ bi.style.width=c.clientWidth+'px'; }
+  function set(x){ var r=c.getBoundingClientRect(); var p=Math.max(4,Math.min(96,(x-r.left)/r.width*100)); bf.style.width=p+'%'; hd.style.left=p+'%'; }
+  var drag=false;
+  c.addEventListener('pointerdown',function(e){ drag=true; c.setPointerCapture(e.pointerId); set(e.clientX); });
+  c.addEventListener('pointermove',function(e){ if(drag) set(e.clientX); });
+  c.addEventListener('pointerup',function(){ drag=false; });
+  window.addEventListener('resize',fit); fit();
+  if (bi.complete) fit(); else bi.addEventListener('load',fit);
+})();
+</script>
+<script>
+(function(){
+  document.querySelectorAll('.ph.dual').forEach(function(card){
+    var a=card.querySelector('.v.a'), b=card.querySelector('.v.b');
+    var dots=card.querySelectorAll('.dots i');
+    function show(second){
+      a.classList.toggle('on',!second); b.classList.toggle('on',second);
+      dots[0].classList.toggle('on',!second); dots[1].classList.toggle('on',second);
+    }
+    var t;
+    card.addEventListener('mouseenter',function(){ t=setTimeout(function(){show(true);},350); });
+    card.addEventListener('mouseleave',function(){ clearTimeout(t); show(false); });
+    card.addEventListener('click',function(){ show(!b.classList.contains('on')); });
+  });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Say hello · Cinderella's Cleaning Services</title>
+<meta name="description" content="A new chapter for Cinderella's Cleaning Services. Tell Hayley where you stand in thirty seconds and she will get back to you personally.">
+<meta name="robots" content="noindex">
+<link rel="icon" href="assets/favicon.png?v=3">
+<meta property="og:title" content="Say hello to Hayley · Cinderella's Cleaning Services">
+<meta property="og:description" content="A new chapter. Thirty seconds, and Hayley gets back to you personally.">
+<meta property="og:image" content="https://cinderellascleaningservices.co.uk/assets/work1.jpg?v=3">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#463c3c;--soft:#8a7a7d;--rose:#d59db4;--rose-deep:#b76e8d;--blush:#f9eef2;--cream:#faf6f0;--line:#eeddE4;--white:#fffdfb;--gold:#c8a96e}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Jost',sans-serif;font-weight:300;color:var(--ink);background:var(--cream);line-height:1.7;font-size:16.5px;letter-spacing:.01em}
+h1,h2,h3{font-family:'Bodoni Moda',serif;line-height:1.16;font-weight:400;letter-spacing:.02em}
+a{color:var(--rose-deep);text-decoration:none}
+img{max-width:100%;display:block}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+header{background:rgba(255,255,255,.96);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10;backdrop-filter:blur(8px)}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:15px 0;gap:14px}
+.brand{display:flex;align-items:center;gap:12px;font-family:'Bodoni Moda',serif;font-weight:400;font-size:20px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink)}
+.brand img{height:56px;width:auto}
+.nav .call{background:var(--rose-deep);color:#fff;font-weight:500;padding:11px 24px;border-radius:999px;font-size:12.5px;white-space:nowrap;letter-spacing:.14em}
+@media(max-width:640px){.brand{font-size:15px}.brand img{height:44px}.nav .call{padding:10px 16px;font-size:11px}}
+
+.page{padding:56px 0 80px;background:radial-gradient(900px 500px at 10% 0%,#fff7fa 0%,rgba(255,247,250,0) 60%),radial-gradient(700px 500px at 100% 100%,#f0d4e0 0%,rgba(240,212,224,0) 60%),var(--cream)}
+.intro{max-width:640px;margin:0 auto;text-align:center}
+.kick{font-size:11.5px;font-weight:400;letter-spacing:.34em;text-transform:uppercase;color:var(--soft)}
+.stars{color:var(--gold);letter-spacing:.8em;margin:14px 0 18px;font-size:14px}
+.intro h1{font-size:clamp(34px,5.4vw,52px)}
+.intro h1 em{font-style:italic;color:var(--rose-deep)}
+.intro p{margin-top:18px;color:#5c4450;font-size:17px}
+.card{max-width:640px;margin:40px auto 0;background:var(--white);border:1px solid var(--line);border-radius:22px;padding:34px 30px 30px;box-shadow:0 18px 50px rgba(120,80,100,.08)}
+@media(max-width:640px){.card{padding:26px 18px 22px;border-radius:18px}}
+.q{margin-top:26px}
+.q:first-child{margin-top:0}
+.q label.t,.q .t{display:block;font-family:'Bodoni Moda',serif;font-size:21px;margin-bottom:10px;color:var(--ink)}
+.q .hint{font-size:13.5px;color:var(--soft);margin:-6px 0 10px}
+.choices{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media(max-width:520px){.choices{grid-template-columns:1fr}}
+.choice{position:relative}
+.choice input{position:absolute;opacity:0;inset:0;width:100%;height:100%;cursor:pointer}
+.choice span{display:block;border:1.5px solid var(--line);border-radius:14px;padding:13px 16px;font-size:15px;font-weight:400;background:#fff;transition:all .15s;line-height:1.35}
+.choice input:checked+span{border-color:var(--rose-deep);background:var(--blush);box-shadow:0 0 0 3px rgba(183,110,141,.12)}
+.choice input:focus-visible+span{outline:2px solid var(--rose-deep);outline-offset:2px}
+.chips{display:flex;flex-wrap:wrap;gap:9px}
+.chip{position:relative}
+.chip input{position:absolute;opacity:0;inset:0;width:100%;height:100%;cursor:pointer}
+.chip span{display:block;border:1.5px solid var(--line);border-radius:999px;padding:9px 16px;font-size:14px;font-weight:400;background:#fff;transition:all .15s}
+.chip input:checked+span{border-color:var(--rose-deep);background:var(--rose-deep);color:#fff}
+input[type=text],input[type=tel],select,textarea{width:100%;font:inherit;font-size:16px;font-weight:300;color:var(--ink);background:#fff;border:1.5px solid var(--line);border-radius:14px;padding:13px 16px;outline:none;transition:border .15s}
+input[type=text]:focus,input[type=tel]:focus,select:focus,textarea:focus{border-color:var(--rose-deep)}
+textarea{min-height:96px;resize:vertical}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:520px){.row2{grid-template-columns:1fr}}
+.regular{display:none;margin-top:22px;padding:18px 18px 6px;background:var(--blush);border-radius:16px}
+.regular.on{display:block}
+.regular .note{font-size:14px;color:#5c4450;margin-bottom:12px;line-height:1.55}
+.hp{position:absolute;left:-9999px;opacity:0;height:0;overflow:hidden}
+.btn{display:inline-block;width:100%;border:0;cursor:pointer;padding:17px 36px;border-radius:999px;font-family:'Jost',sans-serif;font-weight:500;font-size:13.5px;letter-spacing:.2em;text-transform:uppercase;background:var(--rose-deep);color:#fff;margin-top:30px;transition:opacity .15s}
+.btn:disabled{opacity:.55;cursor:wait}
+.fine{font-size:13px;color:var(--soft);text-align:center;margin-top:14px;line-height:1.5}
+.done{display:none;text-align:center;padding:10px 0 4px}
+.done.on{display:block}
+.done h2{font-size:32px}
+.done h2 em{font-style:italic;color:var(--rose-deep)}
+.done p{margin-top:14px;color:#5c4450}
+.done .wa{display:inline-block;margin-top:22px;padding:14px 30px;border-radius:999px;border:1.5px solid var(--ink);color:var(--ink);font-weight:500;font-size:12.5px;letter-spacing:.18em;text-transform:uppercase}
+.err{display:none;margin-top:16px;padding:14px 16px;border-radius:14px;background:#fff4f6;border:1px solid #f0cfd9;font-size:14.5px;color:#5c4450}
+.err.on{display:block}
+footer{padding:38px 0 48px;text-align:center;color:var(--soft);font-size:14px}
+footer .legal{margin-top:16px;font-size:12px;line-height:1.6}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="index.html"><img src="assets/hayley.png?v=3" alt="" onerror="this.style.display='none'"><span>Cinderella's Cleaning Services</span></a>
+    <a class="call" href="tel:+447713275104">CALL · 07713 275104</a>
+  </div>
+</header>
+
+<main class="page">
+  <div class="wrap">
+    <div class="intro">
+      <div class="kick">A new chapter · Autumn 2026</div>
+      <div class="stars">✦ ✦ ✦</div>
+      <h1>Thirty seconds, and I get back to you <em>personally.</em></h1>
+      <p>Cinderella's is starting a new chapter, with a website, a proper price list and more homes than ever. Before I plan the autumn I want to know who is with me: my regulars, the people I have cleaned for before, and anyone who has been meaning to book. Tell me where you stand and I will reply myself.</p>
+    </div>
+
+    <div class="card">
+      <form id="hello" novalidate>
+        <div class="q">
+          <div class="t">Which one is you?</div>
+          <div class="choices">
+            <label class="choice"><input type="radio" name="relationship" value="regular"><span>I am a regular, you clean for me now</span></label>
+            <label class="choice"><input type="radio" name="relationship" value="past"><span>You have cleaned for me before</span></label>
+            <label class="choice"><input type="radio" name="relationship" value="interested"><span>I would like a clean</span></label>
+            <label class="choice"><input type="radio" name="relationship" value="following"><span>Just following along for now</span></label>
+          </div>
+        </div>
+
+        <div class="regular" id="regular">
+          <div class="note">If you are already a client, your price is not changing. The prices on the website are for new customers. I only want to get my diary straight.</div>
+          <div class="q" style="margin-top:0">
+            <div class="t" style="font-size:18px">Happy to carry on as we are?</div>
+            <div class="chips">
+              <label class="chip"><input type="radio" name="carry_on" value="yes"><span>Yes, carry on</span></label>
+              <label class="chip"><input type="radio" name="carry_on" value="change"><span>Yes, but I would like to change something</span></label>
+              <label class="chip"><input type="radio" name="carry_on" value="talk"><span>Let us have a chat</span></label>
+            </div>
+          </div>
+          <div class="q" style="margin-top:16px;margin-bottom:12px">
+            <label class="t" for="day" style="font-size:18px">Your usual day</label>
+            <select id="day" name="day"><option value="">Choose a day</option><option>Monday</option><option>Tuesday</option><option>Wednesday</option><option>Thursday</option><option>Friday</option><option>Saturday</option><option value="varies">It varies</option></select>
+          </div>
+        </div>
+
+        <div class="q row2">
+          <div><label class="t" for="name">Your name</label><input type="text" id="name" name="name" autocomplete="name" required></div>
+          <div><label class="t" for="contact">Best number or email</label><input type="tel" id="contact" name="contact" autocomplete="tel" placeholder="WhatsApp is easiest" required></div>
+        </div>
+
+        <div class="q row2">
+          <div><label class="t" for="area">Your area or postcode</label><input type="text" id="area" name="area" autocomplete="postal-code" placeholder="Hopwood, Heywood, Middleton"></div>
+          <div><label class="t" for="bedrooms">Bedrooms</label><select id="bedrooms" name="bedrooms"><option value="">Choose</option><option>1</option><option>2</option><option>3</option><option>4</option><option value="5+">5 or more</option><option value="business">It is a business</option></select></div>
+        </div>
+
+        <div class="q">
+          <div class="t">What would you be interested in?</div>
+          <div class="hint">Tick anything that fits, or nothing at all.</div>
+          <div class="chips">
+            <label class="chip"><input type="checkbox" name="interest" value="Regular weekly"><span>Regular weekly</span></label>
+            <label class="chip"><input type="checkbox" name="interest" value="Regular fortnightly"><span>Fortnightly</span></label>
+            <label class="chip"><input type="checkbox" name="interest" value="Monthly refresh"><span>Monthly refresh</span></label>
+            <label class="chip"><input type="checkbox" name="interest" value="One off deep clean"><span>One off deep clean</span></label>
+            <label class="chip"><input type="checkbox" name="interest" value="End of tenancy"><span>End of tenancy</span></label>
+            <label class="chip"><input type="checkbox" name="interest" value="Salon or business"><span>Salon or business</span></label>
+            <label class="chip"><input type="checkbox" name="interest" value="Oven and inside cupboards"><span>Oven and cupboards</span></label>
+          </div>
+        </div>
+
+        <div class="q">
+          <label class="t" for="message">Anything you want to tell me</label>
+          <textarea id="message" name="message" placeholder="A question, a date you have in mind, or nothing at all"></textarea>
+        </div>
+
+        <div class="hp" aria-hidden="true"><label>Leave this empty<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+
+        <button class="btn" type="submit" id="send">Send to Hayley</button>
+        <div class="fine">Your details go to Hayley and nowhere else. She replies personally, usually the same day.</div>
+        <div class="err" id="err">That did not go through, which is our end, not yours. <a id="errwa" href="https://wa.me/447713275104">Tap here to message Hayley on WhatsApp instead</a> and your answers will be in the message ready to send.</div>
+      </form>
+
+      <div class="done" id="done">
+        <div class="stars">✦ ✦ ✦</div>
+        <h2>Got it, <em>thank you.</em></h2>
+        <p id="donep">Hayley will be in touch personally, usually the same day.</p>
+        <a class="wa" href="https://wa.me/447713275104">Or message her now</a>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">Cinderella's Cleaning Services · Heywood, Greater Manchester<br>Fully insured · Domestic &amp; commercial
+    <div class="legal">Cinderella's Cleaning Services is a trading name of CINDERELLA CLEANING SERVICES LIMITED. Registered in England and Wales, company number 16438908.<br>Registered office: 30 Hornchurch Court, Heywood, England, OL10 2WL.</div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var ENDPOINT='https://theliftedveil.app.n8n.cloud/webhook/gc02-census';
+  var form=document.getElementById('hello'), reg=document.getElementById('regular'), btn=document.getElementById('send'), err=document.getElementById('err'), errwa=document.getElementById('errwa');
+  var rels=form.querySelectorAll('input[name=relationship]');
+  for(var i=0;i<rels.length;i++){ rels[i].addEventListener('change',function(){ reg.className='regular'+(this.value==='regular'?' on':''); }); }
+  function val(n){ var e=form.querySelector('[name='+n+']:checked'); return e?e.value:(form.elements[n]&&form.elements[n].value||''); }
+  function payload(){
+    var p=new URLSearchParams();
+    ['relationship','name','contact','area','bedrooms','day','message','website'].forEach(function(n){ p.append(n, form.elements[n] ? (form.elements[n].value||'') : ''); });
+    p.set('relationship', val('relationship'));
+    p.append('carry_on', val('carry_on'));
+    var ints=[]; form.querySelectorAll('input[name=interest]:checked').forEach(function(c){ ints.push(c.value); });
+    p.append('interest', ints.join(', '));
+    p.append('extras', '');
+    return p;
+  }
+  function waText(p){
+    var t='Hi Hayley, '+(p.get('name')||'')+' here. I am '+({regular:'a regular',past:'someone you have cleaned for before',interested:'someone who would like a clean',following:'just following along'}[p.get('relationship')]||'getting in touch')+'. Area: '+(p.get('area')||'')+'. Interested in: '+(p.get('interest')||'nothing in particular')+'. '+(p.get('message')||'');
+    return 'https://wa.me/447713275104?text='+encodeURIComponent(t.trim());
+  }
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    err.className='err';
+    var name=form.elements.name.value.trim(), contact=form.elements.contact.value.trim();
+    if(!name||!contact){ (name?form.elements.contact:form.elements.name).focus(); return; }
+    var p=payload(); errwa.href=waText(p);
+    btn.disabled=true; btn.textContent='Sending';
+    var ctrl=('AbortController' in window)?new AbortController():null; var timer=ctrl?setTimeout(function(){ctrl.abort();},12000):null;
+    fetch(ENDPOINT,{method:'POST',body:p,mode:'cors',signal:ctrl?ctrl.signal:undefined}).then(function(r){
+      if(timer) clearTimeout(timer);
+      if(!r.ok) throw new Error('status '+r.status);
+      form.style.display='none'; document.getElementById('done').className='done on';
+      var rel=p.get('relationship');
+      if(rel==='regular') document.getElementById('donep').textContent='Your slot is safe and your price is staying as it is. Hayley will confirm personally.';
+      window.scrollTo({top:0,behavior:'smooth'});
+    }).catch(function(){
+      if(timer) clearTimeout(timer);
+      btn.disabled=false; btn.textContent='Send to Hayley'; err.className='err on';
+    });
+  });
+})();
+</script>
+</body>
+</html>

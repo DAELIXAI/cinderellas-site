@@ -1,0 +1,169 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow">
+<title>Cinderella's · card</title>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+/* Cinderella's Cleaning Services · content card renderer · v1 · 16 September 2026
+   One URL, one image. ?mode=price|review|proof|local|cta|brand|home|story  plus fields. Rendered at 1080x1350 (feed) or 1080x1920 (story). */
+*{box-sizing:border-box}
+html,body{margin:0;background:#f9eef2;color:#463c3c;font-family:"Jost",sans-serif;-webkit-font-smoothing:antialiased}
+body{width:1080px;height:1350px;overflow:hidden}
+body.story{height:1920px}
+.page{position:relative;width:1080px;height:1350px;padding:86px 84px 78px;background:
+  radial-gradient(900px 600px at 15% 0%,#fff7fa 0%,rgba(255,247,250,0) 60%),
+  radial-gradient(700px 500px at 100% 100%,#f0d4e0 0%,rgba(240,212,224,0) 60%),#f9eef2}
+body.story .page{height:1920px;padding:250px 84px 110px}
+.frame{position:absolute;inset:44px;border:1px solid #d8bcc9;pointer-events:none}
+.frame:after{content:"";position:absolute;inset:10px;border:1px solid rgba(200,169,110,.55)}
+.eyebrow{font-size:19px;letter-spacing:.34em;text-transform:uppercase;color:#8a7a7d;font-weight:400}
+h1{font-family:"Bodoni Moda",serif;font-weight:400;font-size:70px;line-height:1.08;margin:26px 0 0;letter-spacing:.005em;max-width:15ch}
+h1 em{font-style:italic;color:#b76e8d}
+.line{margin:38px 0 0;max-width:640px;font-size:26px;line-height:1.55;font-weight:300;color:#5a4e50}
+.pill{margin-top:32px;display:inline-block;border:1px solid #c8a96e;color:#8a6f3d;font-size:18px;letter-spacing:.22em;text-transform:uppercase;padding:13px 22px 12px;font-weight:400}
+.brand{position:absolute;left:84px;bottom:82px;font-family:"Bodoni Moda",serif;font-size:26px;color:#463c3c}
+.brand span{display:block;font-family:"Jost";font-size:16px;letter-spacing:.3em;text-transform:uppercase;color:#8a7a7d;margin-top:8px;font-weight:400}
+.web{position:absolute;right:84px;bottom:84px;font-size:17px;letter-spacing:.14em;color:#b76e8d}
+.web.top{top:96px;bottom:auto}
+.mascot{position:absolute;right:38px;bottom:46px;height:620px;pointer-events:none;filter:drop-shadow(0 18px 28px rgba(70,60,60,.18))}
+.stars{color:#c8a96e;font-size:24px;letter-spacing:.5em}
+/* price */
+.figure{margin:44px 0 0;display:flex;align-items:flex-end;gap:20px}
+.from,.unit{font-size:30px;letter-spacing:.24em;text-transform:uppercase;color:#8a7a7d;padding-bottom:34px;font-weight:400}
+.num{font-family:"Bodoni Moda",serif;font-size:230px;line-height:.86;color:#b76e8d;letter-spacing:-.01em}
+.rule{height:1px;background:#d8bcc9;margin:44px 0 0;width:620px}
+/* review */
+.card{background:#fffdfb;border:1px solid #e6d3db;padding:48px 46px 44px;box-shadow:0 30px 60px rgba(70,60,60,.10);margin-top:60px;max-width:900px}
+.q{font-family:"Bodoni Moda",serif;font-size:34px;line-height:1.4;color:#463c3c;margin:18px 0 0}
+.q.short{font-size:46px;line-height:1.35}.q.mid{font-size:38px}
+.q:before{content:"\201C";color:#b76e8d;font-size:64px;line-height:0;vertical-align:-20px;margin-right:6px}
+.who{margin-top:30px;font-size:17px;letter-spacing:.28em;text-transform:uppercase;color:#8a7a7d}
+.who b{display:block;font-family:"Bodoni Moda",serif;font-weight:400;letter-spacing:.02em;text-transform:none;font-size:24px;color:#463c3c;margin-bottom:8px}
+/* proof */
+.pair{display:flex;gap:22px;margin:50px 0 0}
+.ph{position:relative;flex:1;height:560px;overflow:hidden;background:#fff;border:1px solid #e6d3db}
+.ph.single{height:700px}
+.ph img{width:100%;height:100%;object-fit:cover;display:block}
+.tag{position:absolute;left:18px;top:18px;background:rgba(255,253,251,.92);color:#463c3c;font-size:16px;letter-spacing:.3em;padding:10px 16px 9px;text-transform:uppercase;font-weight:500}
+.tag.after{background:#b76e8d;color:#fffdfb}
+/* local / cta */
+.areas{margin:44px 0 0;display:flex;flex-wrap:wrap;gap:14px;max-width:700px}
+.areas span{border:1px solid #d8bcc9;background:#fffdfb;padding:14px 22px 13px;font-size:20px;letter-spacing:.12em;text-transform:uppercase;color:#5a4e50}
+.list{margin:40px 0 0;max-width:640px}
+.list div{font-size:26px;line-height:1.5;font-weight:300;color:#5a4e50;padding:16px 0;border-top:1px solid #e6d3db}
+.list div:first-child{border-top:none}
+/* story */
+body.story h1{font-size:84px;max-width:11ch}
+body.story .line{font-size:32px;max-width:820px}
+body.story .ph.single{height:900px;margin-top:60px}
+body.story .brand{bottom:120px}
+body.story .web{bottom:122px}
+body.story .mascot{height:700px;bottom:80px}
+.linkbox{margin-top:60px;background:#463c3c;color:#fffdfb;padding:34px 40px;font-size:28px;letter-spacing:.06em;max-width:820px}
+.linkbox small{display:block;font-size:18px;letter-spacing:.3em;text-transform:uppercase;color:#d8bcc9;margin-bottom:12px}
+/* brand photo slide: full-bleed photo, blush wash, the wordmark */
+.frame{z-index:2}
+.bleed{position:absolute;inset:0}.bleed img{width:100%;height:100%;object-fit:cover;display:block}
+.wash{position:absolute;inset:0;background:linear-gradient(180deg,rgba(249,238,242,.18) 0%,rgba(249,238,242,.06) 38%,rgba(249,238,242,.84) 72%,#f9eef2 100%)}
+.eyebrow.onphoto{position:absolute;left:84px;top:96px;background:rgba(255,253,251,.92);padding:13px 20px 12px;color:#5c4450}
+.wordmark{position:absolute;left:84px;bottom:112px;font-family:"Bodoni Moda",serif;font-weight:400;font-size:78px;line-height:1.04;color:#463c3c;letter-spacing:.005em}
+.wordmark em{font-style:italic;color:#b76e8d}
+.wordmark span{display:block;font-family:"Jost";font-size:18px;letter-spacing:.34em;text-transform:uppercase;color:#8a7a7d;margin-top:20px;font-weight:400}
+.wordmark .sub{display:block;font-family:"Jost";font-size:24px;letter-spacing:.02em;text-transform:none;color:#5a4e50;margin-top:26px;font-weight:300;max-width:760px;line-height:1.5}
+body.story .wordmark{bottom:150px;font-size:92px}
+/* home size slide: full-bleed house photo, price card, the mascot, the wordmark */
+.wash.light{background:linear-gradient(180deg,rgba(249,238,242,.10) 0%,rgba(249,238,242,.04) 30%,rgba(249,238,242,.70) 62%,#f9eef2 100%)}
+.pricecard{position:absolute;left:84px;top:176px;width:560px;background:rgba(255,253,251,.95);border:1px solid #e6d3db;padding:32px 36px 28px;box-shadow:0 30px 60px rgba(70,60,60,.14)}
+.pricecard .hl{font-size:16px;letter-spacing:.3em;text-transform:uppercase;color:#8a7a7d}
+.pricecard .big{display:flex;align-items:baseline;gap:14px;margin-top:10px}
+.pricecard .big .num{font-size:118px;line-height:1;white-space:nowrap}.pricecard .big .num.range{font-size:66px}
+.pricecard .big .about,.pricecard .big .per{font-size:20px;letter-spacing:.2em;text-transform:uppercase;color:#8a7a7d}
+.pricecard .rows{margin-top:16px}
+.pricecard .rows div{font-size:22px;line-height:1.4;font-weight:300;color:#5a4e50;padding:11px 0;border-top:1px solid #e6d3db}
+.pricecard .rows div b{font-weight:400;color:#463c3c}
+.wordmark.small{font-size:56px;bottom:100px;max-width:560px}
+.wordmark.small span{font-size:16px;margin-top:14px}
+.sizetag{position:absolute;right:84px;top:96px;font-family:"Bodoni Moda",serif;font-size:60px;color:#463c3c;background:rgba(255,253,251,.92);padding:6px 22px 10px;border:1px solid #e6d3db}
+.sizetag i{font-style:italic;color:#b76e8d}
+/* story: five reviews in one frame */
+.rvwrap{margin-top:34px}
+.rv{background:#fffdfb;border:1px solid #e6d3db;padding:16px 24px 14px;margin-top:11px;box-shadow:0 18px 40px rgba(70,60,60,.08)}
+.rv .stars{font-size:15px;letter-spacing:.4em}
+.rv p{font-family:"Bodoni Moda",serif;font-size:22px;line-height:1.3;margin:6px 0 0;color:#463c3c}
+.rv .who{margin-top:6px;font-size:14px;letter-spacing:.26em;text-transform:uppercase;color:#8a7a7d}
+.rv .who b{display:inline;font-family:"Bodoni Moda",serif;font-weight:400;font-size:19px;letter-spacing:.02em;text-transform:none;color:#463c3c;margin-right:14px}
+body.story.tight .page{padding-top:180px}
+body.story.tight h1{font-size:72px;margin-top:18px}
+</style></head><body><div class="page" id="page"><div class="frame"></div></div>
+<script>
+(function(){
+  const q = new URLSearchParams(location.search);
+  const g = (k, d='') => q.has(k) ? q.get(k) : d;
+  const esc = s => String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+  // titles allow one italic span written as *word*
+  const quote = s => { const t = String(s).trim().replace(/\s+(x+)$/i, '\u00a0$1'); const cls = t.length < 170 ? ' short' : (t.length < 300 ? ' mid' : ''); return `<p class="q${cls}">${esc(t)}</p>`; };
+  const em = s => esc(s).replace(/\*([^*]+)\*/g,'<em>$1</em>').replace(/\n/g,'<br>');
+  const mode = g('mode','cta');
+  const story = mode.startsWith('story');
+  if (story) document.body.classList.add('story');
+  const areas = g('a','Hopwood · Heywood · Middleton');
+  const mascot = g('m','0') === '1';
+  const web = g('web','cinderellascleaningservices.co.uk');
+  const brand = `<div class="brand">Cinderella's Cleaning Services<span>${esc(areas)}</span></div>`;
+  const webEl = (top) => `<div class="web${top?' top':''}">${esc(web)}</div>`;
+  const mas = mascot ? `<img class="mascot" src="mascot.png" alt="">` : '';
+  let html = '';
+  if (mode === 'price') {
+    html = `<div class="eyebrow">${esc(g('e','Guide price'))}</div><h1>${em(g('t','A regular *weekly* clean.'))}</h1>
+      <div class="figure"><span class="from">${esc(g('f','from'))}</span><span class="num">${esc(g('n','£22'))}</span><span class="unit">${esc(g('u','an hour'))}</span></div>
+      <div class="rule"></div><div class="line">${esc(g('l',''))}</div>
+      ${g('p') ? `<div class="pill">${esc(g('p'))}</div>` : ''}${mas}${brand}${webEl(true)}`;
+  } else if (mode === 'review') {
+    html = `<div class="eyebrow">${esc(g('e','From Google'))}</div><h1>${em(g('t','Five stars, in *their* words.'))}</h1>
+      <div class="card"><div class="stars">★★★★★</div>${quote(g('q',''))}<div class="who"><b>${esc(g('w',''))}</b>${esc(g('d','Google review'))}</div></div>
+      ${brand}${webEl(false)}`;
+  } else if (mode === 'proof') {
+    const img2 = g('img2');
+    const pics = img2
+      ? `<div class="pair"><div class="ph"><img src="${esc(g('img'))}">${g('tag1','Before') ? `<span class="tag">${esc(g('tag1','Before'))}</span>` : ''}</div><div class="ph"><img src="${esc(img2)}">${g('tag2','After') ? `<span class="tag after">${esc(g('tag2','After'))}</span>` : ''}</div></div>`
+      : `<div class="pair"><div class="ph single"><img src="${esc(g('img'))}">${g('tag1') ? `<span class="tag after">${esc(g('tag1'))}</span>` : ''}</div></div>`;
+    html = `<div class="eyebrow">${esc(g('e','The work'))}</div><h1>${em(g('t',''))}</h1>${pics}<div class="line">${esc(g('l',''))}</div>${brand}${webEl(false)}`;
+  } else if (mode === 'local') {
+    const chips = g('chips','Hopwood,Heywood,Middleton,Greater Manchester').split(',').map(s=>`<span>${esc(s.trim())}</span>`).join('');
+    html = `<div class="eyebrow">${esc(g('e','Local, insured, quoted in writing'))}</div><h1>${em(g('t','A cleaner *near you.*'))}</h1>
+      <div class="areas">${chips}</div><div class="line">${esc(g('l',''))}</div>${g('p') ? `<div class="pill">${esc(g('p'))}</div>` : ''}${mas}${brand}${webEl(true)}`;
+  } else if (mode === 'story') {
+    const kind = g('k','link');
+    if (kind === 'photo') {
+      html = `<div class="eyebrow">${esc(g('e','Today'))}</div><h1>${em(g('t',''))}</h1><div class="pair"><div class="ph single"><img src="${esc(g('img'))}"></div></div><div class="line">${esc(g('l',''))}</div>${brand}${webEl(false)}`;
+    } else if (kind === 'review') {
+      html = `<div class="eyebrow">${esc(g('e','From Google'))}</div><h1>${em(g('t','Five stars.'))}</h1><div class="card"><div class="stars">★★★★★</div>${quote(g('q',''))}<div class="who"><b>${esc(g('w',''))}</b>${esc(g('d','Google review'))}</div></div>${brand}${webEl(false)}`;
+    } else if (kind === 'reviews') {
+      document.body.classList.add('tight');
+      const items = g('items','').split('\u00a6').filter(Boolean).map(x => { const i = x.indexOf('~'); const name = x.slice(0, i).trim(); const text = x.slice(i + 1).trim().replace(/\s+(x+)$/i, '\u00a0$1'); return `<div class="rv"><div class="stars">\u2605\u2605\u2605\u2605\u2605</div><p>${esc(text)}</p><div class="who"><b>${esc(name)}</b>${esc(g('d','Google review'))}</div></div>`; }).join('');
+      html = `<div class="eyebrow">${esc(g('e','From Google'))}</div><h1>${em(g('t','Five stars, *five times*.'))}</h1><div class="rvwrap">${items}</div>${brand}${webEl(false)}`;
+    } else if (kind === 'price') {
+      html = `<div class="eyebrow">${esc(g('e','Guide price'))}</div><h1>${em(g('t',''))}</h1><div class="figure"><span class="from">${esc(g('f','from'))}</span><span class="num">${esc(g('n',''))}</span><span class="unit">${esc(g('u','an hour'))}</span></div><div class="line">${esc(g('l',''))}</div>${mas}${brand}${webEl(false)}`;
+    } else {
+      html = `<div class="eyebrow">${esc(g('e','Need a cleaner?'))}</div><h1>${em(g('t','Prices are on the *website.*'))}</h1><div class="line">${esc(g('l',''))}</div>
+        <div class="linkbox"><small>${esc(g('ls','Link below'))}</small>${esc(g('lt',web))}</div>${mas}${brand}${webEl(false)}`;
+    }
+  } else if (mode === 'home') {
+    const rows = g('rows','').split('|').filter(Boolean).map(r => { const i = r.indexOf(':'); return i > -1 ? `<div><b>${esc(r.slice(0,i).trim())}</b> ${esc(r.slice(i+1).trim())}</div>` : `<div>${esc(r)}</div>`; }).join('');
+    html = `<div class="bleed"><img src="${esc(g('img'))}" alt="" style="object-position:${esc(g('pos','50% 50%'))}"></div><div class="wash light"></div>
+      <div class="eyebrow onphoto">${esc(g('e','Guide prices'))}</div>
+      <div class="sizetag">${em(g('size',''))}</div>
+      <div class="pricecard"><div class="hl">${esc(g('hl','Regular weekly clean'))}</div><div class="big"><span class="about">${esc(g('f','about'))}</span><span class="num${/ to /.test(g('n','')) ? ' range' : ''}">${esc(g('n',''))}</span><span class="per">${esc(g('u','a visit'))}</span></div><div class="rows">${rows}</div></div>
+      ${mas}<div class="wordmark small">Cinderella’s<br><em>Cleaning</em> Services<span>${esc(areas)}</span></div>`;
+  } else if (mode === 'brand') {
+    html = `<div class="bleed"><img src="${esc(g('img'))}" alt=""></div><div class="wash"></div>
+      ${g('e') ? `<div class="eyebrow onphoto">${esc(g('e'))}</div>` : ''}
+      <div class="wordmark">Cinderella’s<br><em>Cleaning</em> Services<span>${esc(areas)}</span>${g('l') ? `<i class="sub">${esc(g('l'))}</i>` : ''}</div>${webEl(false)}`;
+  } else { // cta
+    const lines = g('lines','').split('|').filter(Boolean).map(s=>`<div>${esc(s)}</div>`).join('');
+    html = `<div class="eyebrow">${esc(g('e','Cinderella’s Cleaning Services'))}</div><h1>${em(g('t','A clean home, *without the guesswork.*'))}</h1>
+      ${lines ? `<div class="list">${lines}</div>` : `<div class="line">${esc(g('l',''))}</div>`}${g('p') ? `<div class="pill">${esc(g('p'))}</div>` : ''}${mas}${brand}${webEl(true)}`;
+  }
+  document.getElementById('page').insertAdjacentHTML('beforeend', html);
+  document.title = 'Cinderella’s · ' + mode;
+})();
+</script></body></html>
